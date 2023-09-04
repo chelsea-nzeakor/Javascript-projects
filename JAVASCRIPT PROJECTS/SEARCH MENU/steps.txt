@@ -1,0 +1,31 @@
+STEP-BY-STEP PROCESS WRITING THE JAVASCIPT CODE
+
+Step 1: HTML
+In the search input (<input id="search">), add the onkeyup attribute to trigger the search() function whenever the user types:
+
+Step 2: JavaScript Functionality
+JavaScript Function: Create a JavaScript function to handle the search functionality. In this case, the function is named search().
+
+Step 3: Access Elements
+Access Elements: Inside the search() function, access the necessary HTML elements using the document.getElementById() method.
+
+Step 4: Capture Input
+Capture Input: Capture the user's input from the search bar and convert it to uppercase for case-insensitive filtering.
+
+Step 5: Loop Through Menu Items
+Loop Through Menu Items: Use a for loop to iterate through the menu items (list items).
+
+Step 6: Filter and Display Items
+Filter and Display Items: Within the loop, access each menu item's anchor (<a>) element, and compare its text (menu item name) with the search input.
+
+JavaScript Concepts Used:
+
+1. Document Object Model (DOM): JavaScript interacts with the HTML document's structure and content using DOM methods and properties.
+
+2. Event Handling: The onkeyup event triggers the search() function when the user types in the search input field.
+
+3. Variables: Variables like input, searchFilter, ul, and li are used to store and manipulate data.
+
+4. Loops: A for loop is used to iterate through the list of menu items.
+
+5. Conditional Statements: An if statement is used to compare the search input with menu item names and decide whether to display or hide items.

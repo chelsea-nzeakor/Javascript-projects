@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Give+You+Glory&family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: burlywood;
+  font-family: "Open Sans", sans-serif;
+  row-gap: 2rem;
+  overflow-y: scroll;
+}
+
+.title {
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: "Ephesis", cursive;
+  word-spacing: 2rem;
+  margin-top: 4rem;
+}
+
+.accordion-box {
+  width: 70%;
+  max-width: 35rem;
+  margin: auto;
+  color: black;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.tab {
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.tab h3 {
+  width: 100%;
+  color: rgb(25, 25, 25);
+  font-size: 1.1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: burlywood;
+  border: none;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+hr {
+  width: 100%;
+  border: 1px dotted gray;
+  margin-bottom: 1rem;
+}
+
+.answer {
+  text-align: justify;
+  font-size: .9rem;
+  color: rgb(56, 56, 56);
+  margin-bottom: 1rem;
+}
+
+/* Styling for the hidden (collapsed) content */
+.hide {
+  max-height: 0; /* Initially hide the content by setting max-height to 0 */
+  overflow: hidden; /* Hide any content that overflows the max-height */
+  transition: max-height 0.5s ease-out; /* Add a smooth transition for max-height */
+}
+
+/* Styling for the rotated icon when a section is open */
+.rotate {
+  transform: rotate(180deg); /* Rotate the icon 180 degrees */
+  transition: transform 0.5s ease; /* Add a smooth transition for the rotation */
+}

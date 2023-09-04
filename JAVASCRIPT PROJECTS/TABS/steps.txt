@@ -1,0 +1,36 @@
+STEP-BY-STEP PROCESS WRITING THE JAVASCIPT CODE
+
+Step 1: Selecting Elements
+- "document.querySelectorAll('.tabs')": This line selects all elements with the class "tabs" and stores them in the tabs NodeList. These elements represent the tab buttons.
+- "document.querySelectorAll('.tab-content')": This line selects all elements with the class "tab-content" and stores them in the tabContents NodeList. These elements represent the content sections associated with the tabs.
+
+Step 2: Adding Event Listeners
+- "tabs.forEach(function(btn) {...})": This loop iterates through each tab button in the tabs NodeList.
+- "btn.addEventListener("click", function() {...})": An event listener for the "click" event is added to each tab button. This means that when a tab button is clicked, the function inside the event listener is executed.
+
+Step 3: Hiding All Tab Contents
+- "tabContents.forEach(function(content) {...})": This loop iterates through all tab content sections in the tabContents NodeList.
+- "content.style.display = "none"; ": For each content section, this line sets its display property to "none," effectively hiding all tab contents initially.
+
+Step 4: Showing the Selected Tab Content
+- "this.getAttribute("data-tab") ": This line retrieves the value of the data-tab attribute from the clicked tab button. The data-tab attribute specifies which tab content to display.
+- "document.getElementById(tabId) ": This line selects the tab content associated with the clicked tab button using its id.
+- "selectedTabContent.style.display = "block"; ": It sets the display property of the selected tab content to "block," making it visible.
+
+Step 5: Managing the "Active" Class
+- "tabs.forEach(function(tab) {...}) ": Another loop iterates through all tab buttons, removing the "active" class from each of them to reset their appearance.
+- "this.classList.add('active'); ": The "active" class is added to the clicked tab button to visually indicate that it's currently active.
+
+Step 6: Automatically Opening the First Tab
+- "document.getElementById("open-first") ": This line retrieves the element with the id "open-first" from the HTML document.
+- ".click() ": The click() method is called on the retrieved element, simulating a click event on it.
+
+Concepts Used:
+
+DOM Manipulation: The code interacts with the Document Object Model (DOM) to modify the appearance and behavior of HTML elements.
+Event Handling: Event listeners are used to respond to user interactions (click events) on the tab buttons.
+Iterating Through NodeLists: The forEach method is employed to iterate through NodeLists, allowing actions to be performed on each element.
+Custom Data Attributes: The data-tab attribute is used to associate tab buttons with specific content sections.
+CSS Class Manipulation: The code adds and removes CSS classes to control the appearance and behavior of elements.
+Simulating Click Events: The click() method is used to programmatically trigger a click event on an element.
+Default Behavior: The code sets up the default behavior of opening the first tab when the page loads automatically.

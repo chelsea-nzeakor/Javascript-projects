@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color:#fff;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+ 
+}
+
+.container {
+  width: 85%;
+}
+
+.tabs-container {
+  height: 30rem;
+  max-width: 42rem;
+  border-radius: 2rem;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+.tab-content {
+  padding: 3rem;
+  text-align: center;
+  display: none;
+  animation: fadeEffect 1s;
+}
+
+.tab-content h2{
+    padding: 1rem;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.btn-container{
+    display: flex;
+   flex-direction: row;
+   background: burlywood;
+   
+   border-radius: 1rem 1rem 0 0 ;
+   padding: 1rem 1rem 0 1rem;
+}
+
+.btn-container .tabs{
+  background-color: transparent;
+  border: none;
+  padding: 1.66rem 3rem;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  width: 33.3%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+
+
+.tabs.active {
+    background-color: #fff;
+    color: burlywood;
+    position: relative;
+  }
+  
+  .tabs.active::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 0;
+    left: -30px;
+    box-shadow: 20px 20px 0 #fff;
+    z-index: 1;
+}
+
+.tabs.active::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 0;
+    right: -30px;
+    box-shadow: 20px -20px 0 #fff;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+

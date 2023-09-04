@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <!-- External script for FontAwesome icons -->
+    <script
+      src="https://kit.fontawesome.com/0d6306ec3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" href="/FAQs Section/styles.css" />
+  </head>
+  <body>
+    <!--Accordion Title -->
+    <h1 class="title">Frequently Asked Questions</h1>
+
+    <!-- Container for the accordion items -->
+    <section class="accordion-box">
+      <!-- First accordion item -->
+      <div class="accordion">
+        <!-- Tab section containing the question and button -->
+        <div class="tab">
+          <h3 class="question">What is an accordion in web design?</h3>
+          <button class="down-btn">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <!-- Answer section initially hidden -->
+        <p class="answer hide">
+          An accordion in web design is a user interface pattern that allows you to present a list of items or sections where only one item is typically shown at a time. When a user clicks on an item's header or title, it expands to reveal more content, while previously open items collapse, creating a space-efficient way to display information.
+        </p>
+        <!-- Horizontal line to separate accordion items -->
+        <hr />
+      </div>
+
+      <!-- Second accordion item (follows the same structure as the first) -->
+      <div class="accordion">
+        <div class="tab">
+          <h3 class="question">What are the main components of an accordion?</h3>
+          <button class="down-btn">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <p class="answer hide">
+          The main components of an accordion typically include: a header, a button and a cotent.
+          
+           
+        </p>
+        <hr />
+      </div>
+
+      <!-- Third accordion item (follows the same structure as the first) -->
+      <div class="accordion">
+        <div class="tab">
+          <h3 class="question">How can I create an accordion using HTML, CSS, and JavaScript?</h3>
+          <button class="down-btn">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <p class="answer hide">
+          You can create an accordion by structuring your HTML with header and content elements for each section. Use CSS to style the accordion's appearance and hide the content sections by default. Then, use JavaScript to add click event listeners to the headers and toggle the display of content sections when clicked.
+        </p>
+        <hr />
+      </div>
+
+      <!-- Fourth accordion item (follows the same structure as the first) -->
+      <div class="accordion">
+        <div class="tab">
+          <h3 class="question">Are there any alternatives to accordions for displaying content?</h3>
+          <button class="down-btn">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <p class="answer hide">
+          Yes, there are alternatives, depending on your content and design goals. Some alternatives include tabs, sliders, and modal dialogs. The choice depends on the amount and nature of your content and the user experience you want to create.
+        </p>
+      </div>
+    </section>
+    <!-- External JavaScript file for functionality -->
+    <script src="/FAQs Section/script.js"></script>
+  </body>
+</html>
